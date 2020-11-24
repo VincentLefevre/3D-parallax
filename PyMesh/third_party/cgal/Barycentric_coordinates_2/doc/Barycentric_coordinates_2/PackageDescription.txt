@@ -1,0 +1,51 @@
+/// \defgroup PkgBarycentricCoordinates2Ref 2D Generalized Barycentric Coordinates Reference
+
+/// \defgroup PkgBarycentricCoordinates2Concepts Concepts
+/// \ingroup PkgBarycentricCoordinates2Ref
+
+/*!
+
+\addtogroup PkgBarycentricCoordinates2Ref
+\cgalPkgDescriptionBegin{2D Generalized Barycentric Coordinates, PkgBarycentricCoordinates2}
+\cgalPkgPicture{barcoord_thumb.png}
+\cgalPkgSummaryBegin
+\cgalPkgAuthors{Dmitry Anisimov, David Bommes, Kai Hormann, and Pierre Alliez}
+\cgalPkgDesc{The package 2D Generalized Barycentric Coordinates offers an efficient and robust implementation of two-dimensional closed-form generalized barycentric coordinates defined for simple two-dimensional polygons. If coordinates with respect to multivariate scattered points instead of a polygon are required, please refer to natural neighbor coordinates from the Package \ref PkgInterpolation2.}
+\cgalPkgManuals{Chapter_2D_Generalized_Barycentric_Coordinates, PkgBarycentricCoordinates2Ref}
+\cgalPkgSummaryEnd
+\cgalPkgShortInfoBegin
+\cgalPkgSince{4.6}
+\cgalPkgBib{cgal:abha-gbc}
+\cgalPkgLicense{\ref licensesGPL "GPL"}
+\cgalPkgShortInfoEnd
+\cgalPkgDescriptionEnd
+
+\cgalClassifedRefPages
+
+\cgalCRPSection{Concepts}
+- `BarycentricTraits_2`
+- `BarycentricCoordinates_2`
+
+\cgalCRPSection{Namespaces}
+- `CGAL::Barycentric_coordinates`
+
+\cgalCRPSection{General Classes}
+- `CGAL::Barycentric_coordinates::Segment_coordinates_2<Traits>`
+- `CGAL::Barycentric_coordinates::Triangle_coordinates_2<Traits>`
+- `CGAL::Barycentric_coordinates::Generalized_barycentric_coordinates_2<Coordinate_2, Traits>`
+
+\cgalCRPSection{Models of `BarycentricCoordinates_2`}
+- `CGAL::Barycentric_coordinates::Wachspress_2<Traits>`
+- `CGAL::Barycentric_coordinates::Mean_value_2<Traits>`
+- `CGAL::Barycentric_coordinates::Discrete_harmonic_2<Traits>`
+
+\cgalCRPSection{Enumerations}
+- `CGAL::Barycentric_coordinates::Query_point_location`
+- `CGAL::Barycentric_coordinates::Type_of_algorithm`
+
+@todo To make the code parallel. Get iteration number from the thread. Add parallel class to each type of the coordinate functions. Use begin() + offset. Resize vector. Parallel class takes as parameters list of points and polygon. Use random access iterator. - Done but we have problems with it.
+
+@todo Add hard tests with epsilon distance away from the polygon’s boundary, which we have discussed during our first group meeting, to current test suit.
+
+
+*/

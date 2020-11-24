@@ -1,0 +1,26 @@
+add_library(PyMesh::Tools INTERFACE IMPORTED)
+target_include_directories(PyMesh::Tools
+    INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_subdirectory(Predicates)
+add_subdirectory(MeshUtils)
+add_subdirectory(Geogram)
+add_subdirectory(Assembler)
+add_subdirectory(CGAL)
+add_subdirectory(IGL)
+add_subdirectory(TetGen)
+add_subdirectory(Triangle)
+add_subdirectory(ConvexHull)
+add_subdirectory(Boolean)
+add_subdirectory(SelfIntersection)
+add_subdirectory(OuterHull)
+add_subdirectory(WindingNumber)
+add_subdirectory(Triangulation)
+add_subdirectory(BVH)
+add_subdirectory(Compression)
+add_subdirectory(Tetrahedralization)
+add_subdirectory(SparseSolver)
+add_subdirectory(Wires)
+add_subdirectory(Envelope)

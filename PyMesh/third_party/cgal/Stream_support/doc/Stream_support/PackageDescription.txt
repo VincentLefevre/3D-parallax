@@ -1,0 +1,69 @@
+/// \defgroup PkgStreamSupportRef IO Streams Reference
+/// \defgroup IOstreamOperators Stream Operators
+/// \ingroup PkgStreamSupportRef
+/*!
+\addtogroup PkgStreamSupportRef
+\cgalPkgDescriptionBegin{IO Streams,PkgStreamSupport}
+\cgalPkgPicture{io.png}
+\cgalPkgSummaryBegin
+\cgalPkgAuthors{Andreas Fabri, Geert-Jan Giezeman, and Lutz Kettner}
+\cgalPkgDesc{All classes in the \cgal kernel provide input and output operators for IO streams.   The basic task of such an operator is to produce a representation of an object that can be written as a sequence of characters on devices as a console, a file, or a pipe. In \cgal we distinguish between  a raw ascii, a raw binary and a pretty printing format.}
+\cgalPkgManuals{Chapter_IO_Streams,PkgStreamSupportRef}
+\cgalPkgSummaryEnd
+\cgalPkgShortInfoBegin
+\cgalPkgSince{1.0}
+\cgalPkgBib{cgal:fgk-ios-12}
+\cgalPkgLicense{\ref licensesLGPL "LGPL"}
+\cgalPkgShortInfoEnd
+\cgalPkgDescriptionEnd
+
+All classes in the \cgal kernel provide input and output operators for
+IO streams.
+\cgal provides three different printing mode, defined in the enum
+`IO::Mode`, as well as different functions to set and get
+the printing mode.
+
+\cgalClassifedRefPages
+
+\cgalCRPSection{Enum}
+- `CGAL::IO::Mode`
+
+\cgalCRPSection{Functions}
+- `CGAL::get_mode()`
+- `CGAL::is_ascii()`
+- `CGAL::is_binary()`
+- `CGAL::is_pretty()`
+- `CGAL::set_mode()`
+- `CGAL::set_ascii_mode()`
+- `CGAL::set_binary_mode()`
+- `CGAL::set_pretty_mode()`
+- \link IOstreamOperators `CGAL::operator>>()` \endlink
+- \link IOstreamOperators `CGAL::operator<<()` \endlink
+- `CGAL::iformat()`
+- `CGAL::oformat()`
+
+\cgalCRPSection{WKT I/O Functions}
+- `CGAL::read_point_WKT()`
+- `GCAL::read_multi_point_WKT()`
+- `GCAL::read_linestring_WKT()`
+- `GCAL::read_multi_linestring_WKT()`
+- `GCAL::read_polygon_WKT()`
+- `GCAL::read_multi_polygon_WKT()`
+- `GCAL::read_WKT()`
+- `CGAL::write_point_WKT()`
+- `CGAL::write_polygon_WKT()`
+- `CGAL::write_linestring_WKT()`
+- `CGAL::write_multi_point_WKT()`
+- `CGAL::write_multi_polygon_WKT()`
+- `CGAL::write_multi_linestring_WKT()`
+
+\cgalCRPSection{Classes}
+- `CGAL::Color`
+- `CGAL::Istream_iterator<T,Stream>`
+- `CGAL::Ostream_iterator<T,Stream>`
+- `CGAL::Verbose_ostream`
+- `CGAL::Input_rep<T,F>`
+- `CGAL::Output_rep<T,F>`
+
+*/
+

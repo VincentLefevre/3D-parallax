@@ -1,21 +1,9 @@
 We offer an experience of 3D on a single 2D image using the parallax effect, i.e, the user is able move his real-time tracked face to visualize the depth effect. By using an inpainting method, the program is able to paint the missing background which is now accessible by the user's movements. 
 
 The inpainting method and a great part of the code have been taken from: 
-\begin{filecontents}{References.bib}
-@inproceedings{Shih3DP20,
-  author = {Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin},
-  title = {3D Photography using Context-aware Layered Depth Inpainting},
-  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020}
-}
-\end{filecontents}
-
-@inproceedings{Shih3DP20,
-  author = {Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin},
-  title = {3D Photography using Context-aware Layered Depth Inpainting},
-  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020}
-}
+```
+Shih3DP20, Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin, 3D Photography using Context-aware Layered Depth Inpainting, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020
+```
 
 The eye detection is based on the shape predictor of 68 face landmarks from dlib. At first, we followed precisely the user's pupils. Then, given the precision needed and thanks to the dectector, we decided to track the point in the middle between the two eyes.
 
@@ -87,7 +75,7 @@ For more detailed instructions, please refer to [`DOCUMENTATION.md`](DOCUMENTATI
 ## License
 This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
 
-If you find our code/models useful, please consider citing us:
+If you find our code useful, please consider citing us:
 ```
 @inproceedings{
   author = {Vincent Lefevre, Lucas Pometti, Alexandre Labattut},

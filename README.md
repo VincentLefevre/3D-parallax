@@ -1,7 +1,16 @@
 
 We offer an experience of 3D on a single 2D image using the parallax effect, i.e, the user is able move his real-time tracked face to visualize the depth effect. By using an inpainting method, the program is able to paint the missing background which is now accessible by the user's movements. 
 
-The inpainting method and a great part of the code have been taken from : 
+The inpainting method and a great part of the code have been taken from: 
+\begin{filecontents}{References.bib}
+@inproceedings{Shih3DP20,
+  author = {Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin},
+  title = {3D Photography using Context-aware Layered Depth Inpainting},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2020}
+}
+\end{filecontents}
+
 @inproceedings{Shih3DP20,
   author = {Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin},
   title = {3D Photography using Context-aware Layered Depth Inpainting},

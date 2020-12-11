@@ -1,3 +1,7 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{filecontents}
+\usepackage{natbib}
 
 We offer an experience of 3D on a single 2D image using the parallax effect, i.e, the user is able move his real-time tracked face to visualize the depth effect. By using an inpainting method, the program is able to paint the missing background which is now accessible by the user's movements. 
 
